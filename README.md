@@ -1,6 +1,9 @@
 # Modul 291 - Oberflächen (UIs) mit Webtechnologien entwickeln
+## Website
+Further informations about this ICT Module are on [ict.bzzlab.ch](http://ict.bzzlab.ch)
 
-## Project setup
+
+## Project setup (install dependencies)
 ```
 yarn install
 ```
