@@ -11,8 +11,9 @@ Wenn weniger als 2 Sitzplätze eingegeben werden, dann erscheint die Fehlermeldu
 <template>
     <div class="container">
     <h3>Anzahl Kino-Sitzplätze ein (mehr als 2)</h3>
-    <input v-model="seats" placeholder="Total Anzahl" />
-    <h3 class="output">{{ errorMessage }}</h3>
+      <!-- b. -->
+    <input/>
+    <h3 class="output"></h3>
   </div>
 </template>
 
@@ -20,21 +21,12 @@ Wenn weniger als 2 Sitzplätze eingegeben werden, dann erscheint die Fehlermeldu
 export default {
   data() {
     return {
-      seats: 1
+      /* a. */
     }
   },
   computed: {
-    total() {
-      return this.seats
-    },
-    errorMessage() {
-      if (this.seats < 2) {
-        return 'Totale Anzahl Sitzplätze muss mehr als 2 sein!';
-      }
-      else {
-        return ''
-      }
-    }
+    /* c. */
+    /* d. */
   }
 }
 </script>

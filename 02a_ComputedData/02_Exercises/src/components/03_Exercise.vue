@@ -7,12 +7,12 @@ b. durchschnittModule(), welche den arithmetischen Durchschnitt aller abgeschlos
 -->
 <template>
   <div class="container">
-    <!-- Aufgabe a.-->
-    <p>Student: {{ student }}</p>
-    <!-- Aufgabe b.-->
-    <p>Anzahl Module: {{ anzahlModule }}</p>
-    <!-- Aufgabe c.-->
-    <p>Notendurchschnitt aller absolvierten Module: {{ durchschnittModule }}</p>
+    <!-- a.-->
+    <p></p>
+    <!-- b.-->
+    <p></p>
+    <!-- c.-->
+    <p></p>
   </div>
 </template>
 <script>
@@ -53,34 +53,9 @@ export default {
     }
   },
   computed: {
-    student() {
-      //Aufgabe a.
-      return this.schule.student.vorname + ' '
-          + this.schule.student.nachname;
-    },
-    //
-    anzahlModule() {
-      //Aufgabe b.
-      return this.schule.student.module.length
-    },
-    durchschnittModule() {
-      //Aufgabe c.
-      let modulnoten = [];
-      let sumnoten = 0;
-      this.schule.student.module.filter(modul => {
-        // If featured is true, return the entry Titel
-        if (modul.abgeschlossen) {
-          modulnoten.push(modul.Note);
-        }
-      });
-      console.log(modulnoten);
-      modulnoten.forEach(note => {
-        sumnoten += note;
-      });
-      let avg = sumnoten/modulnoten.length
-      console.log(avg);
-      return avg;
-    }
+    /* a. */
+    /* b. */
+    /* c. */
   }
 }
 </script>
