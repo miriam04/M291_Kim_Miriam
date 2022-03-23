@@ -4,10 +4,10 @@
 <template>
   <div class="container">
     <h3>Provide your first- and lastname:</h3>
-    <input />
-    <input />
+    <input v-model="firstName" placeholder="First name" />
+    <input v-model="lastName" placeholder="Last name" />
 
-    <h3 class="output"></h3>
+    <h3 class="output">{{ fullName }}</h3>
   </div>
 </template>
 
@@ -15,8 +15,15 @@
 export default {
   data() {
     return {
+      firstName: '',
+      lastName: '',
     }
-  }
+  },
+  computed: {
+    fullName() {
+      return `${this.firstName} ${this.lastName}`
+    },
+  },
 }
 </script>
 
